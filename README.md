@@ -49,6 +49,8 @@ LMLMLMLMM
 
 MMRMMRMRRM
 
+V
+
 ## Output
 Added rover to the grid at 1,2 N
 
