@@ -33,6 +33,10 @@ Each rover will be finished sequentially, which means that the second rover won'
 # Output
 The output for each rover should be its final co-ordinates and heading.
 
+# To Execute tests
+
+Run `python test.py`
+
 # Example
 ## Input
 5 5
