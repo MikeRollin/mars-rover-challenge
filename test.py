@@ -22,8 +22,12 @@ def handleInput(stringInput = ''):
     #potential setup of new grid
     if len(instructions) == 2:
         try:
-            theGrid = grid.Grid(int(instructions[0]),int(instructions[1]))
-            print "Created new grid with dimensions " + instructions[0] +',' +instructions[1]
+            if(int(instructions[0])>0 and int(instructions[1])>0):
+                theGrid = grid.Grid(int(instructions[0]),int(instructions[1]))
+                print "Created new grid with dimensions " + instructions[0] +',' +instructions[1]
+            else:
+                print "Grid size must be bigger than 0,0"
+            
         except ValueError:
             print "Not a valid input for creating a new Grid, please check your spacing and make sure valid integers are used";
     #potentialy adding a new rover
@@ -31,8 +35,8 @@ def handleInput(stringInput = ''):
         try:
             #valid bearing
             if instructions[2].upper() in grid.bearings:
-                theGrid.addRover(int(instructions[0]),int(instructions[1]),instructions[2]);
-                print "Added rover to the grid at " + instructions[0] +','+ instructions[1] + ' ' + instructions[2]
+                theGrid.addRover(int(instructions[0]),int(instructions[1]),instructions[2].upper());
+                print "Added rover to the grid at " + instructions[0] +','+ instructions[1] + ' ' + instructions[2].upper()
             else:
                 print "Invalid bearing given";
         except ValueError:
