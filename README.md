@@ -36,13 +36,23 @@ The output for each rover should be its final co-ordinates and heading.
 # Example
 ## Input
 5 5
+
 1 2 N
+
 LMLMLMLMM
+
 3 3 E
+
 MMRMMRMRRM
+
 ## Output
 Added rover to the grid at 1,2 N
+
 Added rover to the grid at 3,3 E
+
 Printing out locations for rovers
+
 1 3 N
+
 5 1 E
+
